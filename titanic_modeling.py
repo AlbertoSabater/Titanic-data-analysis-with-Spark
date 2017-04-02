@@ -19,7 +19,7 @@ def getError(labels, predictions):
 
 sc = SparkContext()
 hive_context = HiveContext(sc)
-sqlContext = SQLContext(sc)
+#sqlContext = SQLContext(sc)
 sc.setLogLevel("WARN")
 
 data = hive_context.read.table("titanic_train")
